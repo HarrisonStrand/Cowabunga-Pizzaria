@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cowabunga Dude!</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Cowabunga Pizzaria!</h1>
+    <p>We offer only the freshest ingredients for our pizzas, every delivery order comes with one radioactive turtle!</p>
+    <h2>Start your order Below!</h2>
+    <form id="order-form">
+      <div id="customerInfo">
+        <label for="name">Name for Order:</label>
+        <input type="text" class="form-control" id="user-name">
+        <label for="phone">Phone Number:</label>
+        <input type="text" class="form-control" id="user-phone">
+        <label for="address">Address:</label>
+        <input type="text" class="form-control" id="user-address">
+      </div>
+      <div id="pizzaConstruction">
+        <div id="topping-options">
+          <label><input type="checkbox" id="pepperoni" value="1">Pepperoni</label>
+          <label><input type="checkbox" id="olives" value="1">Olives</label>
+          <label><input type="checkbox" id="mushrooms" value="1">Mushrooms</label>
+        </div>
+        <div id="size-options">
+          <label for="small">Small - 10"
+          <input type="radio" name="size-options" value="small">
+          </label>  
+          <label for="medium">Medium - 12"
+          <input type="radio" name="size-options" value="medium">
+          </label>
+          <label for="large">Large - 18"
+          <input type="radio" name="size-options" value="large">
+          </label>
+        </div>
+      </div>
+    </form>
+    <form id="button">  
+    <button class="btn-lg btn-info" id="checkout">Checkout</button>
+    </form>  
+    <p id="finalCustomerInfo">
+    </p>
+    <p id="finalCustomerPrice">
+    </p>
+  </div>
+</body>
+</html>

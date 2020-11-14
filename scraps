@@ -1,0 +1,14 @@
+
+  // if (this.crust === "regular") {
+  //   price += this.size + 0;
+  // } else if (this.crust === "gluten-free") {
+  //   price += this.size + 4;
+  // }
+
+
+          <div id="crust-options">
+          <label for="regular">Regular</label>
+          <input name="crust" type="radio" id="regular" value="regular">
+          <label for="gluten-free">Gluten-Free</label>
+          <input name="crust" type="radio" id="gluten-free" value="gluten-free">
+        </div>
