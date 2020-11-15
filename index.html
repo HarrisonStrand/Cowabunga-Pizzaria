@@ -11,11 +11,72 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Cowabunga Pizzaria!</h1>
-    <p>We offer only the freshest ingredients for our pizzas, every delivery order comes with one radioactive turtle!</p>
-    <h2>Start your order Below!</h2>
+    <div id="logo">
+      <div id="top">
+          <div id="red1"> </div>
+          <p1> _</p1>
+          <div id="teenageMutantNinja">
+            <span style="transform: skew(25deg);">W</span><span style="transform: skew(22.619deg);">e</span><span style="transform: skew(20.2381deg);">l</span><span style="transform: skew(17.8571deg);">c</span><span style="transform: skew(15.4762deg);">o</span><span style="transform: skew(13.0952deg);">m</span><span style="transform: skew(10.7143deg);">e</span><span style="transform: skew(0deg); width: 8px;"> </span><span style="transform: skew(5.95238deg);">t</span><span style="transform: skew(3.57143deg);">o</span><span style="transform: skew(0deg); width: 8px;"> </span><span style="transform: skew(-1.19048deg);">c</span><span style="transform: skew(-3.57143deg);">o</span><span style="transform: skew(-5.95238deg);">w</span><span style="transform: skew(-8.33333deg);">a</span><span style="transform: skew(-10.7143deg);">b</span><span style="transform: skew(-13.0952deg);">u</span><span style="transform: skew(-15.4762deg);">n</span><span style="transform: skew(-17.8571deg);">g</span><span style="transform: skew(-20.2381deg);">a</span><span style="transform: skew(0deg); width: 8px;"> </span></div>
+          <p1> _</p1>
+          <div id="red2"> </div>
+      </div>
+      <div id="turtles">
+        <a href="https://fontmeme.com/tmnt-font/"><img src="https://fontmeme.com/permalink/201115/13eee529eeace774a9592d9bae8465df.png" alt="tmnt-font" border="0"></a>
+      </div>
+    </div>
+    <div id="lineBreaks">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div id="logo2">
+      <div id="top2">
+        <div id="red3"> </div>
+        <p1> _</p1>
+        <div id="orderBelow">
+          <span style="transform: skew(25deg);">s</span><span style="transform: skew(22.0588deg);">t</span><span style="transform: skew(19.1176deg);">a</span><span style="transform: skew(16.1765deg);">r</span><span style="transform: skew(13.2353deg);">t</span><span style="transform: skew(0deg); width: 8px;"> </span><span style="transform: skew(7.35294deg);">y</span><span style="transform: skew(4.41176deg);">o</span><span style="transform: skew(1.47059deg);">u</span><span style="transform: skew(-1.47059deg);">r</span><span style="transform: skew(0deg); width: 8px;"> </span><span style="transform: skew(-7.35294deg);">o</span><span style="transform: skew(-10.2941deg);">r</span><span style="transform: skew(-13.2353deg);">d</span><span style="transform: skew(-16.1765deg);">e</span><span style="transform: skew(-19.1176deg);">r</span><span style="transform: skew(-25deg);">:</span>
+        </div>
+        <p1> _</p1>
+        <div id="red4"> </div>
+      </div>
+    </div>
+    <div id="lineBreaks2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
     <form id="order-form">
-      <div id="customerInfo">
+        <div id="customerInfo">
         <label for="name">Name for Order:</label>
         <input type="text" class="form-control" id="user-name">
         <label for="phone">Phone Number:</label>
@@ -23,12 +84,27 @@
         <label for="address">Address:</label>
         <input type="text" class="form-control" id="user-address">
       </div>
+      <div id="lineBreaks3">
+        <br>
+        <br>
+      </div>
       <div id="pizzaConstruction">
+        <p>Choose your toppings:</p>
         <div id="topping-options">
           <label><input type="checkbox" id="pepperoni" value="1">Pepperoni</label>
           <label><input type="checkbox" id="olives" value="1">Olives</label>
           <label><input type="checkbox" id="mushrooms" value="1">Mushrooms</label>
+          <label><input type="checkbox" id="jalapeños" value="1">Jalapeños</label>
+          <label><input type="checkbox" id="onions" value="1">Onions</label>
+          <label><input type="checkbox" id="pineapple" value="1">Pineapple</label>
+          <label><input type="checkbox" id="sausage" value="1">Sausage</label>
+          <label><input type="checkbox" id="artichokes" value="1">Artichokes</label>
         </div>
+        <div id="lineBreaks2">
+          <br>
+          <br>
+        </div>
+        <p>Choose your size:</p>
         <div id="size-options">
           <label for="small">Small - 10"
           <input type="radio" name="size-options" value="small">
@@ -42,10 +118,16 @@
         </div>
       </div>
     </form>
+    <div id="lineBreaks2">
+      <br>
+      <br>
+    </div>
     <form id="button">  
-    <button class="btn-lg btn-info" id="checkout">Checkout</button>
+    <button class="btn-lg btn-success" id="checkout">GET SHELLSHOCKED</button>
     </form>  
-    <p id="finalCustomerInfo">
+    <p id="finalCustomerPhone">
+    </p>
+    <p id="finalCustomerAddress">
     </p>
     <p id="finalCustomerPrice">
     </p>

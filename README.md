@@ -1,5 +1,5 @@
-# Week One/Landing Page
-##### HTML, CSS, and Git/GitHub comprehension 10/15/20
+# Week Four/Pizza Shop
+##### HTML, CSS, Javascript
 ### By Harrison Strand
 ## Description
 ---This project was designed to display my comprehension of the material in week four of Epicodus with Object-Oriented Javascript. This project uses HTML, CSS, and Javascript.

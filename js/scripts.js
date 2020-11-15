@@ -49,8 +49,8 @@ $(document).ready(function() {
       let address = $(this).find("#user-address").val();
         let newCustomer = new Customer(name, phone, address);
       
-        $("#finalCustomerInfo").text( "Phone Number: " + (newCustomer.phone));
-        $("#finalCustomerInfo").text( "Address: " + (newCustomer.address));
+        $("#finalCustomerPhone").text( "Phone Number: " + (newCustomer.phone));
+        $("#finalCustomerAddress").text( "Address: " + (newCustomer.address));
         $("#finalCustomerPrice").text((newCustomer.name) + ", your total is: " + "$" + (newPizza.pizzaPrice()));
     });
   });
