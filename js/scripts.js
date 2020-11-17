@@ -15,7 +15,6 @@ Customer.prototype.allInfo = function () {
 function Pizza (toppings, size) {
   this.toppings = toppings;
   this.size = size;
-  this.price = [];
 }
 
 Pizza.prototype.pizzaPrice = function () {
@@ -28,7 +27,7 @@ Pizza.prototype.pizzaPrice = function () {
   } else {
     price += 20;
   }
-  return (this.price.push(price));
+  return price;
 };
 
 //UI LOGIC
@@ -51,7 +50,7 @@ $(document).ready(function() {
       
       $("#finalCustomerPhone").text( "Phone Number: " + (newCustomer.phone));
       $("#finalCustomerAddress").text( "Address: " + (newCustomer.address));
-      $("#finalCustomerPrice").text((newCustomer.name) + ", your total is: " + "$" + (newPizza.price));
+      $("#finalCustomerPrice").text((newCustomer.name) + ", your total is: " + "$" + (newPizza.pizzaPrice()));
     });
   });
 });

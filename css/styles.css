@@ -35,10 +35,10 @@ body {
 #turtles {
   font-size: 85px;
   text-shadow:
-      -6px -6px 0 #000,  
-      6px -6px 0 #000,
-      -6px 6px 0 #000,
-      6px 6px 0 #000;
+    -6px -6px 0 #000,  
+    6px -6px 0 #000,
+    -6px 6px 0 #000,
+    6px 6px 0 #000;
   display: inline-block;
 }
 #red1, #red2, #red3, #red4 {
