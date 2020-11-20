@@ -45,6 +45,7 @@ $(document).ready(function() {
       let size = $('input:radio:checked').val();
       let newPizza = new Pizza(toppings, size);
       newPizza.pizzaPrice(price);
+      
       let name = $(this).find("#user-name").val();
       let phone = $(this).find("#user-phone").val();
       let address = $(this).find("#user-address").val();
