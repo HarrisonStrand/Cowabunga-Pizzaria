@@ -45,9 +45,9 @@ $(document).ready(function() {
     let newPizza = new Pizza(toppings, size);
     newPizza.pizzaPrice(price);
     
-    let name = $(this).find("#user-name").val();
-    let phone = $(this).find("#user-phone").val();
-    let address = $(this).find("#user-address").val();
+    let name = $("#user-name").val();
+    let phone = $("#user-phone").val();
+    let address = $("#user-address").val();
     let newCustomer = new Customer(name, phone, address);
     
     $("#finalCustomerPhone").text( "Phone Number: " + (newCustomer.phone));
