@@ -31,9 +31,9 @@ No known bugs.
 | Gather an address from the user. | Customer(address) | "1981 N Tutone Ave. LosAngeles, CA 90640" |
 | Combine all customer info into a string | customerInfo(name + phone + address) | ("Jenny, 867-5309, 1981 N Tutone Ave. LosAngeles, CA 90640") |
 | Pizza( ) | | |
-| Gather user input for items selected and put them into a list | items(crust, size, toppings) | pizza(regular, small, pepperoni) |
-| Price( ) | | |
-| Gather value from user input to price item | price(pizza1) | $12 |
+| Gather user input for Pizza construction and put them into a list | Pizza(crust, size, toppings) | newPizza(regular, small, pepperoni) |
+| pizzaPrice( ) | | |
+| Gather value from user input to price Pizza | (Pizza.price) | $12 |
 
 ## Technologies Used
 Visual Studio Code

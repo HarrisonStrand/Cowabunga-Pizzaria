@@ -36,24 +36,22 @@ Pizza.prototype.pizzaPrice = function () {
 $(document).ready(function() {
   $("button#checkout").click(function(event) {
     event.preventDefault();
-    
-    $("#order-form").each(function() {
-      let price;
-      let toppings = $('input:checkbox:checked').map(function() {
-        return this.value;
-      });
-      let size = $('input:radio:checked').val();
-      let newPizza = new Pizza(toppings, size);
-      newPizza.pizzaPrice(price);
-      
-      let name = $(this).find("#user-name").val();
-      let phone = $(this).find("#user-phone").val();
-      let address = $(this).find("#user-address").val();
-      let newCustomer = new Customer(name, phone, address);
-      
-      $("#finalCustomerPhone").text( "Phone Number: " + (newCustomer.phone));
-      $("#finalCustomerAddress").text( "Address: " + (newCustomer.address));
-      $("#finalCustomerPrice").text((newCustomer.name) + ", your total is: " + "$" + (newPizza.price));
+  
+    let price;
+    let toppings = $('input:checkbox:checked').map(function() {
+      return this.value;
     });
+    let size = $('input:radio:checked').val();
+    let newPizza = new Pizza(toppings, size);
+    newPizza.pizzaPrice(price);
+    
+    let name = $(this).find("#user-name").val();
+    let phone = $(this).find("#user-phone").val();
+    let address = $(this).find("#user-address").val();
+    let newCustomer = new Customer(name, phone, address);
+    
+    $("#finalCustomerPhone").text( "Phone Number: " + (newCustomer.phone));
+    $("#finalCustomerAddress").text( "Address: " + (newCustomer.address));
+    $("#finalCustomerPrice").text((newCustomer.name) + ", your total is: " + "$" + (newPizza.price));
   });
 });

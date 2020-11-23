@@ -12,20 +12,12 @@ Expect: address.toEqual ("1981 N Tutone Ave. LosAngeles, CA 90640");
 Test: "It will combine all customer info into a string"
 Expect: customerinfo.toEqual ("Jenny, 867-5309, 1981 N Tutone Ave. LosAngeles, CA 90640");
 
-Description Items();
+Description Pizza();
 
-Test: "It will gather user input for items selected and put them into a list"
-Expect: items.toEqual ([custom pizza], [breadsticks], [custom pizza]);
+Test: "It will gather user input for pizza construction"
+Expect: Pizza.toEqual (newPizza(toppings, size, price));
 
-Description Price();
+Description pizzaPrice();
 
 Test: "It will gather value from user input to price items"
 Expect: price.toEqual (1 topping = +$1, 2 topping = +$2);
-
-Description AddItems();
-
-Test: "It will gather items and price to add to customer order"
-Expect order.toEqual (pizza1 $12, breadsticks $6, soda $3);
-
-Test: "It will clear user input for more items to be added to order"
-Expect: AddItems.click.toEqual (Items());
